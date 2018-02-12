@@ -2,7 +2,7 @@
     "title": "Freelancer",
     "name": "startbootstrap-freelancer",
     "version": "4.0.0",
-    "description": "A freelancer portfolio HTML theme for Bootstrap.",
+    "description": "Juanita Pinkney Full Stack Developer Portfolio Website",
     "keywords": [
         "css",
         "sass",
@@ -11,10 +11,10 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/freelancer",
+    "homepage": "https://github.com/juanitapinkney/juanitapinkney",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/juanitapinkney/juanitapinkney/issues",
+        "email": "dev.juanitapinkney@gmail.com"
     },
     "license": "MIT",
     "author": "Start Bootstrap",
@@ -23,7 +23,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+        "url": "https://github.com/juanitapinkney/juanitapinkney"
     },
     "dependencies": {
         "bootstrap": "4.0.0",
