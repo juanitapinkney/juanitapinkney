@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>LifeTravel</title>
+    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/lifetravel.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="javascript" type="jQuery/data">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="javascript">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="javascript">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="javascript">
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="javascript">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="javascript">
+    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase|Rubik+Mono+One" rel="javascript">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="assets/materialize css/materialize.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html">Back to lifeTravel</a>
+</div>
+
+<style>
+    body {
+        margin: 0;
+        min-width: 250px;
+    }
+    /* Include the padding and border in an element's total width and height */
+    * {
+        box-sizing: border-box:30px;
+    }
+    /* Remove margins and padding from the list */
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    /* Style the list items */
+    ul li {
+        cursor: pointer;
+        position: relative;
+        padding: 12px 8px 12px 40px;
+        list-style-type: none;
+        background: #eee;
+        font-size: 18px;
+        transition: 0.2s;
+        /* make the list items unselectable */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    /* Set all odd list items to a different color (zebra-stripes) */
+    ul li:nth-child(odd) {
+        background: #f9f9f9;
+    }
+    /* Darker background-color on hover */
+    ul li:hover {
+        background: lightblue;
+    }
+    /* When clicked on, add a background color and strike out text */
+    ul li.checked {
+        background: grey;
+        color: #fff;
+        text-decoration: line-through;
+    }
+    /* Add a "checked" mark when clicked on */
+    ul li.checked::before {
+        content: '';
+        position: absolute;
+        border-color: blue;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+    }
+    /* Style the close button */
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px 12px 16px;
+    }
+    .close:hover {
+        background-color: #f44336;
+        color: blue;
+    }
+    /* Style the header */
+    .header {
+        background-color: #546e7a;
+        padding: 30px 40px;
+        color: navy;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 10px;
+    }
+    /* Clear floats after the header */
+    .header:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Style the input */
+    input {
+        border: none;
+        width: 75%;
+        padding: 10px;
+        float: left;
+        font-size: 16px;
+    }
+    /* Style the "Add" button */
+    .addBtn {
+        padding: 10px;
+        width: 25%;
+        background: #d9d9d9;
+        color: #555;
+        float: left;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .addBtn:hover {
+        background-color: #bbb;
+    }
+
+    h2 {
+        color: white;
+    }
+</style>
+
+<div class="header" id="myDIV">
+    <h2 style="margin:5px">Wait! Before you go...Let's check off the really important stuff!</h2>
+    <input id="myInput" placeholder="Before I forget..." type="text">
+    <span class="addBtn" onclick="newElement()">Add to list</span>
+</div>
+<ul id="myUL">
+    <li>Hit the gym, gotta look good in that new swimsuit!</li>
+    <li>Pay bills first, so you can have the most fun on your trip!</li>
+    <li>Confirm your booked flight and in-flight arrangements.</li>
+    <li>Do you need your express boarding pass?</li>
+    <li>Don't forget your Passort! Also, if required, birth certificate and other forms of identification.</li>
+    <li>Hey, did you pack your laptop, moible phone and additional electronics?</li>
+    <li>How about those powercords and or backup batteries?</li>
+    <li>Did your doctor sign off on those meds?</li>
+</ul>
+
+<script>
+    // Create a "close" button and append it to each list item
+    var myNodelist = document.getElementsByTagName("LI");
+    var i;
+    for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+    }
+    // Click on a close button to hide the current list item
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+    // Add a "checked" symbol when clicking on a list item
+    var list = document.querySelector('ul');
+    list.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+        }
+    }, false);
+    // Create a new list item when clicking on the "Add" button
+    function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+            alert("You must write something!");
+        } else {
+            document.getElementById("myUL").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+    }
+</script>
+
+
+   <footer class="page-footer blue-grey darken-1">
+        <div class="container" style="text-align: center; font-family: sans-serif; color: white; font-size: 17px; padding-top: 100px;">
+     
+        <div class="footer-copyright">
+            <div class="container">
+                &copy;
+                <script language="javascript" type="text/javascript">
+                    var today = new Date();
+                    var year = today.getFullYear();
+                    document.write(year);
+                </script>
+                lifeTravel. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+    </footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+</html>

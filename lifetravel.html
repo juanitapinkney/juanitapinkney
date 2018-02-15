@@ -1,0 +1,161 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>lifeTravel</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="assets/css/lifetravel.css">
+</head>
+
+<body>
+    
+<nav class="nav blue-grey darken-1">
+    <a href="index.html" class="logo">lifeTravel
+    </a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travel-checklist.html">Checklist</a></li>
+        <li><a href="https://www.google.com/flights/">Search Flights</a></li>
+        <li><a href="about.html">About lifeTravel</a></li>
+    </ul>
+
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travel-checklist.html">Checklist</a></li>
+        <li><a href="about.html">About lifeTravel</a></li>
+        <li><a href="https://www.google.com/flights">Search Flights</a></li>
+    </ul>
+    <script>$(".button-collapse").sideNav();</script>
+    </div>
+</nav>
+
+
+<div class="container">
+
+    <header class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/images/pexels-photo-297755.jpeg">
+                </div>
+                <div class="card-content">
+                    <h1>Welcome to lifeTravel</h1>
+                    <p>Traveling...That's the fun part! Let's assume, you're traveling to an exciting and unfamiliar place. What do you need to know before you go? The weather, air quality, foreign currency converter? And we have the perfect digital travel checklist, so you can get to your destination, worry free!</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="row text-center">
+
+        <div class="col l3 s12">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Currency Converter</span>
+                    <i class="medium material-icons">attach_money</i>
+                    <div class="input-field col s6">
+                    <label for="search_input">Country</label>
+                    <input type="text" id="search_input" placeholder="Search Country"><br>
+                    </div>
+                    <div id="search-results"></div>
+
+                </div>
+                <div class="card-action">
+                    <a id="add_topic">Count</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col l3 s12">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Check Weather</span>
+                    <i class="medium material-icons">wb_sunny</i>
+                    <div class="input-field col s6">
+                        <input placeholder="Type City Name Here" id="weatherInput" type="text" class="validate">
+                        <label for="weatherInput">City</label>
+                    </div>
+                    <div id="temp"></div>
+                    <div id="wind"></div>
+                    <div id="humidity"></div>
+
+                    <div id="error"></div>
+
+                    <script src="assets/js/javascript.js"></script>
+                </div>
+                <div class="card-action">
+                    <a id="weatherSearch">Weather</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col l3 s12">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Air Quality</span>
+                    <i class="medium material-icons">cloud_queue</i>
+                    <div id="airPollution"></div>
+                    <div id="airQualityError"></div>
+                </div>
+                <div class="card-action">
+                    <a id="airQualitySearch">Air Quality</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col l3 s12">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Checklist</span>
+                    <i class="medium material-icons">format_list_numbered</i>
+                </div>
+                <div class="card-action">
+                    <a href="travel-checklist.html">Checklist</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   <footer class="page-footer blue-grey darken-1">
+        <div class="container" style="text-align: center; font-family: sans-serif; color: white; font-size: 17px; padding-top: 100px;">
+     
+        <div class="footer-copyright">
+            <div class="container">
+                &copy;
+                <script language="javascript" type="text/javascript">
+                    var today = new Date();
+                    var year = today.getFullYear();
+                    document.write(year);
+                </script>
+                lifeTravel. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+    </footer>
+
+
+
+
+</div>
+
+</body>
+
+</html>
