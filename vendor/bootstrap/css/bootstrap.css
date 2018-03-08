@@ -436,7 +436,7 @@ small,
 mark,
 .mark {
   padding: 0.2em;
-  background-color: #fff;
+  background-color: #fcf8e3;
 }
 
 .list-unstyled {
@@ -502,7 +502,7 @@ mark,
 
 .figure-caption {
   font-size: 90%;
-  color: #fff;
+  color: #6c757d;
 }
 
 code,
@@ -526,7 +526,7 @@ kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
   color: #fff;
-  background-color: #fff;
+  background-color: #212529;
   border-radius: 0.2rem;
 }
 
