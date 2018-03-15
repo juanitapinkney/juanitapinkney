@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato";
+  font-family: sans-serif;
   /* background: url("img/bg.jpg"); */
 }
 
@@ -28,10 +28,10 @@ hr.star-light:after,
 hr.star-dark:after {
   position: relative;
   top: -0.8em;
-  display: inline-block;
+  display: instar-block;
   padding: 0 0.25em;
   content: "\f005";
-  font-family: FontAwesome;
+  font-family: sans-serif;
   font-size: 2em;
 }
 
@@ -41,7 +41,7 @@ hr.star-light {
 
 hr.star-light:after {
   color: #fff;
-  background-color: #18bc9c;
+  background-color: grey;
 }
 
 hr.star-dark {
@@ -59,13 +59,13 @@ section {
 
 section h2 {
   font-size: 2.25rem;
-  line-height: 2rem;
+  star-height: 2rem;
 }
 
 @media (min-width: 992px) {
   section h2 {
     font-size: 3rem;
-    line-height: 2.5rem;
+    star-height: 2.5rem;
   }
 }
 
@@ -78,7 +78,7 @@ section h2 {
   width: 3.25rem;
   height: 3.25rem;
   font-size: 1.25rem;
-  line-height: 2rem;
+  star-height: 2rem;
 }
 
 .scroll-to-top {
@@ -92,7 +92,7 @@ section h2 {
   width: 3.5rem;
   height: 3.5rem;
   background-color: rgba(33, 37, 41, 0.5);
-  line-height: 3.1rem;
+  star-height: 3.1rem;
 }
 
 #mainNav {
@@ -116,7 +116,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #18bc9c;
+  color: grey;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
@@ -125,7 +125,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #18bc9c;
+  color: grey;
 }
 
 #mainNav .navbar-toggler {
@@ -152,13 +152,13 @@ section h2 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #18bc9c;
+    background: grey;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #18bc9c;
+    background: grey;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -176,7 +176,7 @@ header.masthead {
 
 header.masthead h1 {
   font-size: 3rem;
-  line-height: 3rem;
+  star-height: 3rem;
 }
 
 header.masthead h2 {
@@ -191,7 +191,7 @@ header.masthead h2 {
   }
   header.masthead h1 {
     font-size: 4.75em;
-    line-height: 4rem;
+    star-height: 4rem;
   }
   header.masthead h2 {
     font-size: 1.75em;
@@ -255,7 +255,7 @@ header.masthead h2 {
 }
 
 .portfolio-modal .portfolio-modal-dialog .close-button i {
-  line-height: 38px;
+  star-height: 38px;
 }
 
 .portfolio-modal .portfolio-modal-dialog h2 {
@@ -294,7 +294,7 @@ header.masthead h2 {
 
 .floating-label-form-group label {
   font-size: 0.85em;
-  line-height: 1.764705882em;
+  star-height: 1.764705882em;
   position: relative;
   z-index: 0;
   top: 2em;
@@ -305,7 +305,7 @@ header.masthead h2 {
   -ms-transition: top 0.3s ease, opacity 0.3s ease;
   transition: top 0.3s ease, opacity 0.3s ease;
   vertical-align: middle;
-  vertical-align: baseline;
+  vertical-align: basestar;
   opacity: 0;
 }
 
@@ -320,7 +320,7 @@ header.masthead h2 {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #18bc9c;
+  color: grey;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -339,7 +339,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: #18bc9c;
+  color: grey;
 }
 
 a:focus,
@@ -353,7 +353,7 @@ a:active {
 }
 
 .bg-primary {
-  background-color: #18bc9c !important;
+  background-color: grey !important;
 }
 
 .bg-secondary {
@@ -361,7 +361,7 @@ a:active {
 }
 
 .text-primary {
-  color: #18bc9c !important;
+  color: grey !important;
 }
 
 .text-secondary {
@@ -369,8 +369,8 @@ a:active {
 }
 
 .btn-primary {
-  background-color: #18bc9c;
-  border-color: #18bc9c;
+  background-color: grey;
+  border-color: grey;
 }
 
 .btn-primary:hover,
