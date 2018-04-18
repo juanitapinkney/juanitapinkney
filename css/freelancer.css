@@ -253,7 +253,7 @@ header.masthead h2 {
 
 .portfolio-modal .portfolio-modal-dialog .close-button {
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   right: 2rem;
 }
 
@@ -268,7 +268,7 @@ header.masthead h2 {
 @media (min-width: 768px) {
   .portfolio-modal .portfolio-modal-dialog {
     min-height: 100vh;
-    padding: 5rem;
+    padding: 2rem;
     margin: 3rem calc(3rem - 8px);
   }
   .portfolio-modal .portfolio-modal-dialog h2 {
