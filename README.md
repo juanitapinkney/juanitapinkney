@@ -1,0 +1,1 @@
+- 🔭 I’m currently working on my portfolio to showcase some of my Technology Analyst work.
