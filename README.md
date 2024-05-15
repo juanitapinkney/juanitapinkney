@@ -1,2 +1,2 @@
-UNDER RE-CONSTRUCTION
+UNDER CONSTRUCTION
 https://juanitapinkney.github.io/juanitapinkney/
